@@ -236,6 +236,7 @@
         function jugar(){
           var y=ramdom();
           document.getElementById("corazon").src="imagen/pose"+y+".png";
+          document.getElementById("corazon").style.pointerEvents = "none";
           mostrar();
            
 
@@ -247,6 +248,7 @@
           score++;
           volver();
           document.getElementById("puntaje").textContent=score;
+          document.getElementById("corazon").style.pointerEvents = "auto";
           ocultar();
 
         }
@@ -254,6 +256,7 @@
           score--;
           volver();
           document.getElementById("puntaje").textContent=score;
+          document.getElementById("corazon").style.pointerEvents = "auto";
           ocultar();
         }
 
